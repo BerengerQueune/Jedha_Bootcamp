@@ -1,0 +1,77 @@
+/* change background color to pink */
+body {
+  background-color: pink;
+}
+
+a:visited { text-decoration:none; color:#2e23d3 ; font-weight:bold; }
+a:hover { text-decoration: none; color:#ececec ; font-weight:bold; }
+a:focus { text-decoration: none; color:#134a9c ; font-weight:bold; }
+a:hover, a:active { text-decoration: none; color:#cf2424 ; font-weight:bold; }
+a:link { text-decoration: none; color:#ececec ; font-weight:bold; }
+
+footer {
+	background-color: #8AAAE5;
+}
+
+
+/* footer */
+
+footer {
+	margin-top: 100px;
+	width:100%;
+	height: 100px;
+}
+
+/* footer */
+
+
+.highlightme {
+	font-weight:bold;
+    color:#23ad41;
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  .gradient_bg {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 15s ease infinite;
+	        animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+
+.gradient_bg:hover{
+    -webkit-animation: gradient 15s ease infinite;
+    animation: gradient 15s ease infinite;
+ }
+
+
+ 
