@@ -1,37 +1,34 @@
-### Find your buddy! 
-#### Here is one way to create an app that simply create random groups of people
-import random 
+import pandas as pd 
+from sklearn.model_selection import train_test_split 
+from sklearn.preprocessing import  StandardScaler
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.pipeline import Pipeline
+from joblib import dump
+import os
 
-### Create a list of buddies in your class 
-GROUPS_SIZE = 2
-buddies = [
-    "Alex", 
-    "Antoine", 
-    "Michel", 
-    "Anna", 
-    "Célia", 
-    "Roseline",
-    "Marie",
-    "David", 
-    "Jocelyne",
-    "Joséphine",
-    "Julien",
-    "Hortense", 
-    "Ahmed"
-    ]
+# Import dataset
+df = pd.read_csv("https://julie-2-next-resources.s3.eu-west-3.amazonaws.com/full-stack-full-time/linear-regression-ft/californian-housing-market-ft/california_housing_market.csv")
 
-random.shuffle(buddies)
+# X, y split 
+X = df.iloc[:, :-1]
+y = df.iloc[:, -1]
 
-#### Match each buddy to a person 
-groups = [buddies[x:x+GROUPS_SIZE] for x in range(0, len(buddies), GROUPS_SIZE)]
+# Train / test split 
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2)
 
-if len(groups[-1]) ==1:
-    alone_person = groups.pop(-1)
-    groups[-1] += alone_person
+# Pipeline 
+model = Pipeline(steps=[
+    ("standard_scaler", StandardScaler()),
+    ("Regressor",RandomForestRegressor(n_estimators=30, min_samples_split=5))
+])
 
-### Print matching buddies
-print("Here are your groups")
-print("\n")
+model.fit(X_train, y_train)
 
-for i, group in enumerate(groups):
-    print(f"group {i}: {group}")
+# Print Scores 
+print(f"Train score: {model.score(X_train, y_train)}")
+print(f"Test score: {model.score(X_test, y_test)}")
+
+# Persist our model 
+print("Saving model...")
+dump(model, "house_prices_model.joblib")
+print(f"Model has been saved here: {os.getcwd()}")
