@@ -1,10 +1,19 @@
-# Jedha Bootcamp
+# Jedha Bootcamp Portfolio
+Welcome to my portfolio showcasing the comprehensive training I received at Jedha Bootcamp, a leading institution specializing in Data Analysis, Data Science, and Data Engineering education.
 
-[Jedha Bootcamp](https://en.jedha.co/) is a School training students in Data Analysis, Data Science and Data Engineering.  
+# Overview
+During my time at Jedha Bootcamp, I dedicated myself to honing my skills in both Data Science and Data Engineering, completing a rigorous curriculum totaling 525 hours of immersive learning.
+
+# Courses
+- Data Science Course: Explore the intricacies of data analysis, predictive modeling, and machine learning techniques. View Course Details
+- Data Engineering Course: Dive deep into the fundamentals of data processing, infrastructure design, and deployment strategies. View Course Details
   
-I followed both their Data Science and Data Engineering courses for a total of 525 hours.  
-  
-Data Science course: https://en.jedha.co/formations/formation-data-scientist  
-Data Engineer course: https://en.jedha.co/formations/formation-data-engineer  
-  
-This repository contains most of the worst I did during these courses.
+# Repository Contents
+This repository serves as a comprehensive collection of the projects and assignments I completed throughout these courses, showcasing my practical understanding and application of key concepts.
+
+Feel free to explore the various folders and files to gain insight into my journey and proficiency in the realms of Data Science and Data Engineering.
+
+# Contact
+For inquiries or collaborations, don't hesitate to connect with me on [Linkedin]([https://www.example.com](https://www.linkedin.com/in/berenger-queune/).
+
+Thank you for visiting!
