@@ -14,6 +14,6 @@ This repository serves as a comprehensive collection of the projects and assignm
 Feel free to explore the various folders and files to gain insight into my journey and proficiency in the realms of Data Science and Data Engineering.
 
 # Contact
-For inquiries or collaborations, don't hesitate to connect with me on [Linkedin]([https://www.example.com](https://www.linkedin.com/in/berenger-queune/)).
+For inquiries or collaborations, don't hesitate to connect with me on [LinkedIn](https://www.linkedin.com/in/berenger-queune/).
 
 Thank you for visiting!
